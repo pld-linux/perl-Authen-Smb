@@ -1,12 +1,11 @@
-%define	pdir	Authen
-%define	pnam	Smb
 %include	/usr/lib/rpm/macros.perl
+%define		pdir	Authen
+%define		pnam	Smb
 Summary:	Authen-Smb perl module
 Summary(pl):	Modu³ perla Authen-Smb
 Name:		perl-Authen-Smb
 Version:	0.91
 Release:	5
-
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -21,7 +20,7 @@ Authen-Smb is a module to authenticate against an SMB server.
 Authen-Smb jest modu³em umo¿liwiaj±cym dostêp do serwera SMB.
 
 %prep
-%setup -q -n Authen-Smb-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
