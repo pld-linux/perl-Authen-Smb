@@ -2,8 +2,8 @@
 Summary:	Authen-Smb perl module
 Summary(pl):	Modu³ perla Authen-Smb
 Name:		perl-Authen-Smb
-Version:	0.8
-Release:	3
+Version:	0.91
+Release:	1
 Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
