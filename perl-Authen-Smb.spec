@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Authen
-%define	pnam	Smb
+%define		pdir	Authen
+%define		pnam	Smb
 Summary:	Authen::Smb - Perl extension to authenticate against an SMB server
 Summary(pl):	Authen::Smb - rozszerzenie Perla do uwierzytelniania za po¶rednictwem serwera SMB
 Name:		perl-Authen-Smb
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Authen::Smb Perl module allows you to authenticate a user against an
-NT domain.  You can specify both a primary and a backup server to use
-for authentication.  The NT names of the machines should be used for
+NT domain. You can specify both a primary and a backup server to use
+for authentication. The NT names of the machines should be used for
 specifying servers.
 
 %description -l pl
