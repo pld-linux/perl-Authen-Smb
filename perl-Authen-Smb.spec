@@ -25,7 +25,7 @@ Summary(zh_CN):	Authen::Smb Perl Ä£¿é
 Name:		perl-Authen-Smb
 Version:	0.91
 Release:	7
-License:	GPL
+License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	97d8aee872160eeabd0c08a7b0985216
