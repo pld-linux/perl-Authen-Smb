@@ -13,7 +13,7 @@ Summary(fr):	Module Perl Authen::Smb
 Summary(it):	Modulo di Perl Authen::Smb
 Summary(ja):	Authen::Smb Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Authen::Smb ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Authen::Smb
+Summary(nb):	Perlmodul Authen::Smb
 Summary(pl):	Modu³ Perla Authen::Smb
 Summary(pt):	Módulo de Perl Authen::Smb
 Summary(pt_BR):	Módulo Perl Authen::Smb
