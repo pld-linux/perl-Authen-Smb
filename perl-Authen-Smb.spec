@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Authen
 %define		pnam	Smb
-Summary:	Authen-Smb perl module
-Summary(pl):	Modu³ perla Authen-Smb
+Summary:	Authen::Smb perl module
+Summary(pl):	Modu³ perla Authen::Smb
 Name:		perl-Authen-Smb
 Version:	0.91
 Release:	5
@@ -14,10 +14,10 @@ BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Authen-Smb is a module to authenticate against an SMB server.
+Authen::Smb is a module to authenticate against an SMB server.
 
 %description -l pl
-Authen-Smb jest modu³em umo¿liwiaj±cym dostêp do serwera SMB.
+Authen::Smb jest modu³em umo¿liwiaj±cym dostêp do serwera SMB.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
