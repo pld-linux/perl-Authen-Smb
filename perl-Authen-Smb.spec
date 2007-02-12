@@ -6,7 +6,7 @@
 %define		pdir	Authen
 %define		pnam	Smb
 Summary:	Authen::Smb - Perl extension to authenticate against an SMB server
-Summary(pl):	Authen::Smb - rozszerzenie Perla do uwierzytelniania za po∂rednictwem serwera SMB
+Summary(pl.UTF-8):   Authen::Smb - rozszerzenie Perla do uwierzytelniania za po≈õrednictwem serwera SMB
 Name:		perl-Authen-Smb
 Version:	0.91
 Release:	8
@@ -24,11 +24,11 @@ NT domain. You can specify both a primary and a backup server to use
 for authentication. The NT names of the machines should be used for
 specifying servers.
 
-%description -l pl
-Modu≥ Perla Authen::Smb umoøliwia uwierzytelnianie uøytkownika za
-po∂rednictwem domeny NT. Daje moøliwo∂Ê okre∂lenia zarÛwno serwera
-podstawowego, jak i zapasowego, ktÛre bed± uøywane do
-uwierzytelniania. Do okre∂lenia serwerÛw naleøy uøywaÊ nazw NT. 
+%description -l pl.UTF-8
+Modu≈Ç Perla Authen::Smb umo≈ºliwia uwierzytelnianie u≈ºytkownika za
+po≈õrednictwem domeny NT. Daje mo≈ºliwo≈õƒá okre≈õlenia zar√≥wno serwera
+podstawowego, jak i zapasowego, kt√≥re bedƒÖ u≈ºywane do
+uwierzytelniania. Do okre≈õlenia serwer√≥w nale≈ºy u≈ºywaƒá nazw NT. 
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
