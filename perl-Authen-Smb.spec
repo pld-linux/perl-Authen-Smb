@@ -6,7 +6,7 @@
 %define		pdir	Authen
 %define		pnam	Smb
 Summary:	Authen::Smb - Perl extension to authenticate against an SMB server
-Summary(pl.UTF-8):   Authen::Smb - rozszerzenie Perla do uwierzytelniania za pośrednictwem serwera SMB
+Summary(pl.UTF-8):	Authen::Smb - rozszerzenie Perla do uwierzytelniania za pośrednictwem serwera SMB
 Name:		perl-Authen-Smb
 Version:	0.91
 Release:	8
