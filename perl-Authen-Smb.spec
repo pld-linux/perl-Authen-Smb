@@ -57,6 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Authen/Smb.pm
 %dir %{perl_vendorarch}/auto/Authen/Smb
 %{perl_vendorarch}/auto/Authen/Smb/autosplit.ix
-%{perl_vendorarch}/auto/Authen/Smb/Smb.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Authen/Smb/Smb.so
 %{_mandir}/man3/*
