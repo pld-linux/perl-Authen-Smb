@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Authen
 %define		pnam	Smb
+%include	/usr/lib/rpm/macros.perl
 Summary:	Authen::Smb - Perl extension to authenticate against an SMB server
 Summary(pl.UTF-8):	Authen::Smb - rozszerzenie Perla do uwierzytelniania za pośrednictwem serwera SMB
 Name:		perl-Authen-Smb
@@ -14,8 +14,9 @@ License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	97d8aee872160eeabd0c08a7b0985216
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Authen-Smb/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,7 +29,7 @@ specifying servers.
 Moduł Perla Authen::Smb umożliwia uwierzytelnianie użytkownika za
 pośrednictwem domeny NT. Daje możliwość określenia zarówno serwera
 podstawowego, jak i zapasowego, które bedą używane do
-uwierzytelniania. Do określenia serwerów należy używać nazw NT. 
+uwierzytelniania. Do określenia serwerów należy używać nazw NT.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
