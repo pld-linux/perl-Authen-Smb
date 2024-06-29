@@ -8,7 +8,7 @@ Summary:	Authen::Smb - Perl extension to authenticate against an SMB server
 Summary(pl.UTF-8):	Authen::Smb - rozszerzenie Perla do uwierzytelniania za pośrednictwem serwera SMB
 Name:		perl-Authen-Smb
 Version:	0.91
-Release:	24
+Release:	25
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
