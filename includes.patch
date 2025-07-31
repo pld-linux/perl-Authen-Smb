@@ -1,0 +1,42 @@
+--- Authen-Smb-0.91/smbval/session.c.orig	1999-06-07 03:54:22.000000000 +0200
++++ Authen-Smb-0.91/smbval/session.c	2025-07-31 02:33:50.996141269 +0200
+@@ -24,6 +24,7 @@
+ */
+ 
+ #include <malloc.h>
++#include <stdlib.h>
+ #include <string.h>
+ 
+ int RFCNB_errno = 0;
+--- Authen-Smb-0.91/Smb.xs.orig	1999-06-07 03:54:22.000000000 +0200
++++ Authen-Smb-0.91/Smb.xs	2025-07-31 02:37:52.777602489 +0200
+@@ -4,6 +4,7 @@
+ #include "EXTERN.h"
+ #include "perl.h"
+ #include "XSUB.h"
++#include "smbval/valid.h"
+ #ifdef __cplusplus
+ }
+ #endif
+--- Authen-Smb-0.91/smbval/smblib-util.c.orig	1999-06-07 03:54:23.000000000 +0200
++++ Authen-Smb-0.91/smbval/smblib-util.c	2025-07-31 02:49:12.418371529 +0200
+@@ -25,6 +25,7 @@
+ 
+ #include "smblib-priv.h"
+ #include <malloc.h>
++#include <string.h>
+ 
+ #include "rfcnb.h"
+ 
+--- Authen-Smb-0.91/smbval/smblib.c.orig	1999-06-07 03:54:23.000000000 +0200
++++ Authen-Smb-0.91/smbval/smblib.c	2025-07-31 13:16:17.940688982 +0200
+@@ -34,7 +34,9 @@
+ 
+ #include "rfcnb.h"
+ 
++#include <ctype.h>
+ #include <signal.h>
++#include <string.h>
+ 
+ SMB_State_Types SMBlib_State;
+ 

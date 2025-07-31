@@ -13,6 +13,8 @@ License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	97d8aee872160eeabd0c08a7b0985216
+Patch0:		includes.patch
+Patch1:		prototypes.patch
 URL:		http://search.cpan.org/dist/Authen-Smb/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -32,6 +34,8 @@ uwierzytelniania. Do określenia serwerów należy używać nazw NT.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch -P0 -p1
+%patch -P1 -p1
 
 %build
 %{__perl} Makefile.PL \

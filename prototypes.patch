@@ -1,0 +1,26 @@
+--- ./smbval/smblib-priv.h.orig	2025-07-31 02:44:33.140020863 +0200
++++ ./smbval/smblib-priv.h	2025-07-31 13:06:31.927252156 +0200
+@@ -623,3 +623,12 @@
+ 
+ SMB_Tree_Handle SMB_TreeConnect(SMB_Handle_Type con, SMB_Tree_Handle tree,
+ 				char *path, char *password, char *dev);
++
++int SMB_Init();
++int SMB_Negotiate(SMB_Handle_Type Con_Handle, char *Prots[]);
++int SMB_Discon(SMB_Handle_Type Con_Handle, BOOL KeepHandle);
++int SMB_Logon_Server(SMB_Handle_Type Con_Handle, char *UserName, 
++		     char *PassWord);
++void SMB_Get_My_Name(char *name, int len);
++#define uchar unsigned char
++void SMBencrypt(uchar *passwd, uchar *c8, uchar *p24);
+--- Authen-Smb-0.91/smbval/smblib.c.orig	1999-06-07 03:54:23.000000000 +0200
++++ Authen-Smb-0.91/smbval/smblib.c	2025-07-31 13:16:17.940688982 +0200
+@@ -39,6 +39,8 @@
+ #include <string.h>
+ 
+ SMB_State_Types SMBlib_State;
++int RFCNB_Free_Pkt(struct RFCNB_Pkt *pkt);
++int RFCNB_Set_Sock_NoDelay(struct RFCNB_Con *con_Handle, BOOL yn);
+ 
+ /* Initialize the SMBlib package     */
+ 
